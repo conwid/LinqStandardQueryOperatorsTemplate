@@ -1,7 +1,8 @@
 This repository contains the source code for my Visual Studio extensions that adds a new project template to Visual Studio. The template is a console app-based project template to help you demonstrate how the standard query operators of the Language Integrated Query, LInQ work during your classes, courses or demos.
 
 You can download the extension from the marketplace: https://marketplace.visualstudio.com/items?itemName=CONWID.LinqStandardQueryOperatorsTemplateExtension
-For other teaching aids and materials, check out [the other teaching related posts on this blog](https://dotnetfalcon.com/tag/teaching).
+
+For other teaching aids and materials, check out [the teaching related posts on my blog](https://dotnetfalcon.com/tag/teaching).
 
 ## The template
 When creating the project template I had three goals in mind:
