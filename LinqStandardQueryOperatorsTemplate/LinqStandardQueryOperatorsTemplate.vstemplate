@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Linq Standard Query Operators</Name>
+    <Description>A project that contains built-in datasources to practice Linq Standard Query Operators</Description>
+    <Icon>LinqStandardQueryOperatorsTemplate.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>76902237-dc80-459f-9967-b36737fd67fb</TemplateID>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>LinqPractice</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="ProjectTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Properties\AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <Folder Name="DataSource" TargetFolderName="DataSource">
+        <ProjectItem ReplaceParameters="true" TargetFileName="DataRepository.cs">DataRepository.cs</ProjectItem>
+        <ProjectItem TargetFileName="categories.xml">categories.xml</ProjectItem>
+        <ProjectItem TargetFileName="products.xml">products.xml</ProjectItem>
+      </Folder>
+      <Folder Name="Model" TargetFolderName="Model">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Category.cs">Category.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Product.cs">Product.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Extensions" TargetFolderName="Extensions">
+        <ProjectItem ReplaceParameters="true" TargetFileName="TypeExtensions.cs">TypeExtensions.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IEnumerableExtensions.cs">IEnumerableExtensions.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="TableParserExtensions.cs">TableParserExtensions.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
